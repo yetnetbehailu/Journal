@@ -62,9 +62,11 @@ a {
     background-color: #a9fb8fde;
 }
 
-a.active {
+a.active, .current{
     text-transform: uppercase;
 }
+
+
 
 .journal {
     width: 70%;

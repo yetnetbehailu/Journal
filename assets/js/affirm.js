@@ -19,7 +19,6 @@ $(document).ready(function () {
 });
 
 window.SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
-debugger
 const recognition = new SpeechRecognition();
 recognition.interimResults = true;
 recognition.lang = 'en-US';
@@ -33,7 +32,7 @@ recognition.addEventListener('result', e => {
         .map(result => result[0])
         .map(result => result.transcript)
         .join('');
-fdcas
+
     const poopScript = transcript.replace(/poop|poo|shit|dump/gi, '💩');
     p.textContent = poopScript;
 
