@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Permanent+Marker&display=swap');
+
+html {
+    box-sizing: border-box;
+}
+
+* ::before ::after {
+    box-sizing: inherit;
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(0deg, #ff00d3d6 -4%, #ffb6f3 118%) no-repeat;
+}
+
+.navbar {
+    display: table;
+    padding: 0;
+    margin: 15px auto 0;
+    width: 90%;
+    border-spacing: 10px;
+    background-color: white;
+    border: solid;
+}
+
+li {
+    display: table-cell;
+    font-family: "Indie Flower", "Permanent Marker";
+    font-size: 120%;
+    padding: 9px;
+    text-align: center;
+    border: solid;
+}
+
+@media screen and (max-width:414px) {
+    li {
+        font-size: 92%;
+    }
+}
+
+@media screen and (min-width:768px) {
+    li {
+        font-size: 35px;
+    }
+}
+
+
+a {
+    text-decoration: none;
+    color: #701288;
+}
+
+.cell1 {
+    background-color: #00dcff59;
+}
+
+.cell2 {
+    background-color: #f08080de;
+}
+
+.cell3 {
+    background-color: #a9fb8fde;
+}
+
+a.active {
+    text-transform: uppercase;
+}
+
+.journal {
+    width: 70%;
+    height: 65%;
+    margin: 35px auto 0;
+    border: solid;
+    border-radius: 15px;
+    text-align: center;
+}
+
+@media screen and (min-width:463px) {
+    .journal {
+        width: 409px;
+        height: 570px;
+    }
+}
+
+#bookmark {
+    width: 29px;
+    position: relative;
+    top: -1.5%;
+    left: -40%;
+}
+
+.signIn {
+    background-color: #fff2cede;
+    height: 132px;
+    width: 85%;
+    margin: 10% auto 0;
+    border-radius: 25px;
+    border: double;
+}
+
+@media screen and (min-width:463px) {
+    .signIn {
+        width: 65%;
+    }
+}
+
+.bg-color {
+    background-color: #fae0d1;
+    margin: 0 16%;
+    border-radius: 5px;
+}
+
+input {
+    border: none;
+    margin: 7% auto 0;
+    padding: 3px;
+    font-family: 'Indie Flower';
+    color: #656565;
+}
+
+.loginBtn {
+    margin: 4%;
+    background: #ecf741b8;
+    border: outset;
+    font-family: "Permanent Marker";
+}
+
+.signupBtn {
+    margin: 4%;
+    background: #ecf741b8;
+    border: outset;
+    font-family: "Permanent Marker";
+}
+
+.words {
+    width: 265px;
+    max-height: 70%;
+    background: #f9f9f9;
+    border-radius: 5px;
+    margin: 25px auto;
+    background-image: linear-gradient(180deg, transparent 25px, black 25px, transparent 26px), linear-gradient(90deg, transparent 38px, black 39px, transparent 26px);
+    background-size: 100% 2rem;
+    line-height: 2rem;
+    font-family: "Indie Flower";
+    padding: 0 20px 0 45px;
+    overflow: auto;
+}
+
+@media only screen and (min-width: 415px) {
+    .words {
+        width: 60%;
+    }
+}
+
+p{
+    background-size: 100% 2rem;
+    line-height: 1rem;
+    font-family: "Indie Flower";
+    overflow: auto;
+    margin-top: 8px;
+    
+}
