@@ -1,6 +1,6 @@
 $(document).ready(function () {
     const editText = document.getElementById('editText');
-
+    editText.focus();
     // Get the placeholder attribute
     const placeholder = editText.getAttribute('data-placeholder');
 
